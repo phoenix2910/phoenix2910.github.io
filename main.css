@@ -132,7 +132,7 @@ li{
 .nav-link:hover,
 .nav-link:focus{
   background: linear-gradient(to top, #ffe838, #fd57bf);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -206,6 +206,7 @@ li{
   font-family: 'Dancing Script' , sans-serif;
   background: linear-gradient(to top, #233329, #63d471);
   -webkit-background-clip: text;
+  background-clip:text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
   user-select: none;
@@ -269,6 +270,10 @@ li{
 .fa-dribbble-square:hover{
   color: #ea4c89;
 }
+#tryhackme{
+  height: 50.4px;
+  width: 48.4px;
+}
 /*End about*/
 
 /*Start services*/
@@ -283,7 +288,7 @@ li{
 .skill{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding: 2rem;
 }
@@ -379,11 +384,13 @@ li{
   margin-bottom: 1rem;
   opacity: .3;
 }
-
+.timeline .subtitle{
+  font-size: 15px;
+}
 .timeline .date{
   border-bottom: 1px solid rgba(255,255,255,0.1);
   margin-bottom: 1rem;
-  padding bottom: 1rem;
+  padding-bottom: 1rem;
   position: relative;
 }
 
@@ -421,7 +428,7 @@ li{
 /*End timeline*/
 
 /*Start contact*/
-.contact{
+/* .contact{
   background-color: #16162d;
 
 }
@@ -457,7 +464,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
   color: #221e3f;
   background-color: #ffe838;
-}
+} */
 /*End contact*/
 
 /*Start footer*/
@@ -483,7 +490,7 @@ input[type="submit"]:hover{
   cursor: pointer;
 }
 
-.up i{
+#up i{
   color: #16162d;
   font-size: 2rem;
   margin: auto;
@@ -611,7 +618,7 @@ input[type="submit"]:hover{
 
     .projects-description{
       margin: 0;
-      order: 2:
+      order: 2;
     }
 
     .timeline p{
